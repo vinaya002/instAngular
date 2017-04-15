@@ -1,0 +1,21 @@
+<html>
+<head>
+
+<script src="array_09_04.js"></script>
+  
+</head>
+<body ng-controller="myCtrlArray">
+<table border="1">
+	<tr ng-repeat="data in array">
+	<td>
+		{{data}}
+	</td>
+	</tr>
+</table>
+<br>
+Enter number to insert in array
+<input type="number" ng-model="num">
+<button ng-click="addNum(num)">Submit</button>
+<button ng-click="removeNum(num)">Remove</button>
+</body>
+</html>
